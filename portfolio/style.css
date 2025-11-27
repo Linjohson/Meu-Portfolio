@@ -1,0 +1,47 @@
+/* Ajustes Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Scroll suave nativo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Customização da Navbar */
+.navbar {
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    opacity: 0.95;
+}
+
+/* Efeitos nos Cards de Projetos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--bs-heading-color);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1); /* Brilho ciano suave */
+    border-color: #0dcaf0 !important; /* Borda fica ciano ao passar o mouse */
+}
+
+/* Estilo da Imagem de Perfil (placeholder) */
+img.rounded-circle {
+    object-fit: cover;
+    /* Transição suave para filtro e transformação ao passar o mouse */
+    transition: filter 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+    will-change: transform;
+}
+
+img.rounded-circle:hover {
+    filter: grayscale(0%);
+    transform: scale(1.18); /* Ajuste a escala conforme desejar (ex: 1.05 - 1.15) */
+}
+
+/* Destaque de texto Java */
+.text-java {
+    color: #f89820; /* Laranja do Java */
+}
